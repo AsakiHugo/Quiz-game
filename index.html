@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- start page -->
+    <div class="start_page">
+        <button class="start_btn" type="submit">Start Quiz</button>
+    </div>
+
+    <!-- rule page -->
+    <div class="rule_page">
+        <div class="title">Some <em>Rules</em> of this quiz</div>
+        <div class="rules_list">
+            <div class="rules rule_1">1.You will only get 15s to answer for each quiz.</div>
+            <div class="rules rule_2">2.You can select answer once.</div>
+            <div class="rules rule_3">3.You can't exit while playing because this may cause failure your answers.</div>
+            <div class="rules rule_4">4.You must get at least <em>5 points</em> points.s</div>
+        </div>
+        <div class="buttons">
+            <button class="continue_btn" type="submit">Continue Quiz</button>
+            <button class="exit_btn" type="submit">Exit Quiz</button>
+        </div>
+    </div>
+
+    <!-- quiz page -->
+    <div class="quiz_box">
+        <header>
+            <h2>Hugo's Quiz Application</h2>
+            <div class="timer">
+                Timeleft
+                <span>0</span>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <div class="quizzes">
+            <div class="quiz_question">
+                <!-- <span>When is Hugo's Birthday?</span> -->
+            </div>
+            <div class="quiz_options">
+                <!-- <div class="options">
+                    <span>12 Sep 2003</span>
+                </div>
+                <div class="options">
+                    <span>22 Aug 2003</span>
+                    <i class="wrong fa-regular fa-circle-check"></i>
+                </div>
+                <div class="options">
+                    <span>21 Sep 2003</span>
+                </div>
+                <div class="options">
+                    <span>22 Sep 2003</span>
+                    <i class="correct fa-regular fa-circle-xmark"></i>
+                </div> -->
+            </div>
+        </div>
+        <div class="next_quiz">
+            <div class="total_quze">
+                <!-- <p><span>5</span> of <span>5</span> questions</p> -->
+            </div>
+            <button class="next_btn">Next Quiz</button>
+        </div>
+    </div>
+
+    <!-- result_page -->
+    <div class="result_page">
+        <i class="fa-solid fa-crown"></i>
+        <h2>Congratulations!</h2>
+        <p>You have successfully finished!</p>
+        <p class="result">
+            <!-- You got <span>4</span> out of <span>5</span> -->
+        </p>
+        <div class="result_buttons">
+            <button class="quit_btn">Quit Quiz</button>
+        </div>
+    </div>
+
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+</html>
